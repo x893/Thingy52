@@ -1,0 +1,145 @@
+Altium Designer Pick and Place Locations
+D:\Applications\hardware\pca20020\trunk\production_files\400182_pick_and_place.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       03.04.17
+Time:       13:56
+Revision:   12268
+Variant:    No variations
+Units used: mm
+
+Designator Comment          Layer       Footprint                             Center-X(mm) Center-Y(mm) Rotation Description                                                                     
+R2         1M0              BottomLayer RESC1005X04L                          30.328       44.780       90       Resistor, ±1%, 0.063W                                                           
+R28        470R             BottomLayer RESC1005X04L                          29.159       33.731       180      Resistor, ±1%, 0.063W                                                           
+R27        470R             BottomLayer RESC1005X04L                          32.131       35.382       180      Resistor, ±1%, 0.063W                                                           
+D2         Zener 2.4V       BottomLayer SOD-523                               29.261       32.741       360      Diode, Zener, 2.4V, 0.3W                                                        
+D1         Zener 2.4V       BottomLayer SOD-523                               32.487       37.490       180      Diode, Zener, 2.4V, 0.3W                                                        
+C47        22µF             BottomLayer CAPC1608X06L                          26.518       43.713       360      CAP CER 22UF 6.3V 20% X5R 0603                                                  
+J3         FPC 0.5mm RA SMD BottomLayer FPC_05P-0.5mm-RA-SMD                  12.000       12.650       180      0.5mm FPC, 5P,Right Angle SMT,Double Contact,H=1.2mm,White, Tin plated          
+C42        10µF             BottomLayer CAPC1608X06L                          20.066       46.533       90       Capacitor, X5R, ±20%                                                            
+C43        22µF             BottomLayer CAPC1608X06L                          21.285       44.145       360      CAP CER 22UF 6.3V 20% X5R 0603                                                  
+U14        XCL210C33        BottomLayer CL-2025                               22.581       47.015       180      3.3V 200mA Inductor Built-in Step-Down “micro DC/DC” Converter                  
+U15        TCK106AF         BottomLayer SOT95P280X140-5N                      21.438       40.208       90       1.0 A Load Switch IC with Slew Rate Control Driver in Small Package             
+R17        27k              BottomLayer RESC1005X04L                          12.802       38.024       360      Resistor, ±1%, 0.063W                                                           
+R19        10k              BottomLayer RESC1005X04L                          12.802       37.109       360      THERMISTOR 10K OHM NTC 0402 SMD                                                 
+R15        10k              BottomLayer RESC1005X04L                          12.776       40.792       180      Resistor, ±1%, 0.063W                                                           
+P3         Pin List 1x2     TopLayer    LIST_1x2-NC                           13.462       29.464       180      Pin List 1x2, 2.54mm (100mil)                                                   
+P2         Pin List 1x2     TopLayer    LIST_1x2-NC                           19.812       32.004       180      Pin List 1x2, 2.54mm (100mil)                                                   
+P1         Pin List 1x2     TopLayer    LIST_1x2-NC                           19.812       34.544       180      Pin List 1x2, 2.54mm (100mil)                                                   
+C41        1.0µF            BottomLayer CAPC1608X06L                          10.490       36.601       180      Capacitor, X7R, ±10%                                                            
+C44        10µF             BottomLayer CAPC1608X06L                          21.285       42.951       360      Capacitor, X5R, ±20%                                                            
+P7         HW4-2.0          TopLayer    TAIFENG_HW4-2.0-NC                    7.000        32.000       90       4 pin, Grove DIP connector                                                      
+P8         HW4-2.0          TopLayer    TAIFENG_HW4-2.0-NC                    29.000       43.000       90       4 pin, Grove DIP connector                                                      
+P6         HW4-2.0          TopLayer    TAIFENG_HW4-2.0-NC                    18.000       43.000       90       4 pin, Grove DIP connector                                                      
+P5         HW4-2.0          TopLayer    TAIFENG_HW4-2.0-NC                    7.000        43.000       90       4 pin, Grove DIP connector                                                      
+R23        4k7              BottomLayer RESC1005X04L                          13.564       25.756       180      Resistor, ±1%, 0.063W                                                           
+R22        4k7              BottomLayer RESC1005X04L                          13.538       24.587       180      Resistor, ±1%, 0.063W                                                           
+P4         Pin Header 2x10  TopLayer    HDR_2x10-NC                           14.200       16.400       180      Pin Header 2x10, 2.54mm (100mil)                                                
+L5         N.C.             TopLayer    INDC1005X04L                          42.650       2.250        90       Not mounted                                                                     
+L4         3.9nH            TopLayer    INDC1005X04L                          44.100       1.775        0        Inductor, 170mA, ±0.1nH                                                         
+C13        2.2pF            TopLayer    CAPC1005X04L                          41.200       1.775        180      Capacitor, NP0, ±0.1pF                                                          
+Fid2       Fiducial mark    TopLayer    Fiducial_Round-Square                 48.700       35.400       0        Fiducial Mark                                                                   
+Fid1       Fiducial mark    TopLayer    Fiducial_Round-Square                 2.000        6.500        0        Fiducial Mark                                                                   
+LD1        LED RGB          BottomLayer LED_RGB_0606                          37.300       27.300       180      RGB LED 1.60 mm x 1.60 mm SMD                                                   
+Q2         DMP2200UDW       BottomLayer SOT-363                               33.820       40.473       270      Dual P Ch MOFET, 900mA, 260mOhm, 450mW                                          
+Q3         DMP2200UDW       BottomLayer SOT-363                               34.051       48.781       360      Dual P Ch MOFET, 900mA, 260mOhm, 450mW                                          
+R7         169R             BottomLayer RESC1005X04L                          33.909       45.212       360      Resistor, ±1%, 0.063W                                                           
+R9         11R              BottomLayer RESC1005X04L                          33.909       42.545       360      Resistor, ±1%, 0.063W                                                           
+R8         7R15             BottomLayer RESC1005X04L                          33.909       46.990       360      Resistor, ±1%, 0.063W                                                           
+C10        1.0µF            TopLayer    CAPC1608X06L                          40.646       14.225       220      Capacitor, X7R, ±10%                                                            
+L3         15nH             TopLayer    INDC1005X04L                          39.783       14.910       220      Inductor, 320mA, ±5%                                                            
+L2         10µH             TopLayer    INDC1608X06L                          37.700       13.743       180      Inductor, 80mA, ±10%                                                            
+C4         100nF            TopLayer    CAPC1005X04L                          34.622       16.994       90       Capacitor, X7R, ±10%                                                            
+C5         100nF            TopLayer    CAPC1005X04L                          28.653       14.505       90       Capacitor, X7R, ±10%                                                            
+C7         100pF            TopLayer    CAPC1005X04L                          35.358       6.377        270      Capacitor, NP0, ±5%                                                             
+C1         12pF             TopLayer    CAPC1005X04L                          37.339       3.735        180      Capacitor, NP0, ±2%                                                             
+X1         32MHz            TopLayer    BT-XTAL_2016                          37.339       5.513        90       XTAL SMD 2016, 32MHz, Cl=8pF, Tot: ±40ppm                                       
+C8         100nF            TopLayer    CAPC1005X04L                          37.339       8.155        360      Capacitor, X7R, ±10%                                                            
+C9         4.7µF            TopLayer    CAPC1608X06L                          35.663       16.994       90       Capacitor, X5R, ±10%                                                            
+C6         N.C.             TopLayer    CAPC1005X04L                          34.469       6.377        90       Not mounted                                                                     
+C2         12pF             TopLayer    CAPC1005X04L                          37.339       7.291        360      Capacitor, NP0, ±2%                                                             
+U1         nRF52832-QFAAB0  TopLayer    QFN40P600X600X90-48N                  32.742       11.660       270      Multi-protocol Bluetooth Low Energy, ANT and 2.4GHz proprietary system-on-chip  
+L1         3.9nH            TopLayer    INDC1005X04L                          32.234       6.047        270      Inductor, 170mA, ±0.1nH                                                         
+C3         0.8pF            TopLayer    CAPC1005X04L                          32.742       7.469        180      Capacitor, NP0, ±5%                                                             
+X2         32.768kHz        TopLayer    XTAL_2012                             33.352       19.255       180      XTAL SMD 2012, 32.768kHz, 9pF, ±20ppm                                           
+C12        12pF             TopLayer    CAPC1005X04L                          31.802       19.128       90       Capacitor, NP0, ±2%                                                             
+C11        12pF             TopLayer    CAPC1005X04L                          33.199       17.731       180      Capacitor, NP0, ±2%                                                             
+J2         HDR-2, 1mm       BottomLayer SM02B-SRSS-TB                         11.813       46.250       270      1.0mm pitch connector side entry SMD                                            
+SW1        Switch           BottomLayer Switch-Slide-RA-J-Lead-DPDT-8.5x3.5mm 2.475        39.620       90       SMD slide Switch (ON-ON)                                                        
+U5         LIS2DH12         BottomLayer LGA50P200X200X100-12N                 24.665       34.097       270      3-axis - ±2g/±4g/±8g/±16g digital output femto accelerometer                    
+R4         169R             BottomLayer RESC1005X04L                          33.909       44.323       0        Resistor, ±1%, 0.063W                                                           
+J1         MicroUSB-B       BottomLayer USB-Micro-B-RA-SMD-PiP                2.787        25.300       360      MicroUSB-B-SMT                                                                  
+C17        100nF            BottomLayer CAPC1005X04L                          27.775       25.808       90       Capacitor, X7R, ±10%                                                            
+C18        100nF            BottomLayer CAPC1005X04L                          29.972       22.606       90       Capacitor, X7R, ±10%                                                            
+C19        10nF             BottomLayer CAPC1005X04L                          23.876       28.372       360      Capacitor, X7R, ±10%                                                            
+C20        100nF            BottomLayer CAPC1005X04L                          26.314       28.372       180      Capacitor, X7R, ±10%                                                            
+C21        100nF            BottomLayer CAPC1005X04L                          25.348       32.242       180      Capacitor, X7R, ±10%                                                            
+C22        10µF             BottomLayer CAPC1608X06L                          25.068       31.176       180      Capacitor, X5R, ±20%                                                            
+C23        100nF            BottomLayer CAPC1005X04L                          23.392       32.242       360      Capacitor, X7R, ±10%                                                            
+C27        100nF            BottomLayer CAPC1005X04L                          35.246       23.925       270      Capacitor, X7R, ±10%                                                            
+C45        270pF            BottomLayer CAPC1005X04L                          22.370       4.240        90       Capacitor, NP0, ±5%                                                             
+C46        270pF            BottomLayer CAPC1005X04L                          22.370       2.259        90       Capacitor, NP0, ±5%                                                             
+LD2        LED RGB          BottomLayer MSL0104                               37.142       44.328       90       High brightness, side view RGB LED                                              
+P9         Pin Header 2x5   BottomLayer HDR_2x5-SMD-1.27mm-ANG                5.303        10.980       90       Pin Header 2x5, 1.27mm (50mil)                                                  
+R5         7R15             BottomLayer RESC1005X04L                          33.909       46.101       360      Resistor, ±1%, 0.063W                                                           
+R6         11R              BottomLayer RESC1005X04L                          33.909       43.434       360      Resistor, ±1%, 0.063W                                                           
+U3         MPU-9250         BottomLayer QFN40P300X300X105_HS-25N              25.300       25.300       360      9-axis MotionTracking™ Device                                                   
+U4         NX3DV2567        BottomLayer XQFN40P180X260X50-16N                 29.995       25.300       360      Low-ohmic four-pole double-throw analog switch                                  
+U8         BH1745NUC        BottomLayer WSON50P210X210X60_HS-9N               37.300       23.300       360      Digital 16bit Serial Output Type Color Sensor IC                                
+A1         2450AT18B100     TopLayer    2450AT18B100                          47.600       1.760        360      2.45 GHz chip antenna                                                           
+SW2        PB SW            TopLayer    Switch-PB-6.2x6.3mm-SMD               28.600       25.300       360      Tactile Switch, SPNO, SMD, 160gf, 6.2x6.3x2.5mm                                 
+Q5         DMC2400UV        BottomLayer SOTFL50P162X60-6N                     32.513       32.334       180      Dual N & P Ch MOFET, 1.03A/0.7A, 480mOhm, 450mW                                 
+Q4         DMC2400UV        BottomLayer SOTFL50P162X60-6N                     34.493       35.941       180      Dual N & P Ch MOFET, 1.03A/0.7A, 480mOhm, 450mW                                 
+C24        100nF            BottomLayer CAPC1005X04L                          23.854       6.775        90       Capacitor, X7R, ±10%                                                            
+C25        100nF            BottomLayer CAPC1005X04L                          25.302       5.708        360      Capacitor, X7R, ±10%                                                            
+C30        10nF             BottomLayer CAPC1005X04L                          47.096       16.964       0        Capacitor, X7R, ±10%                                                            
+C31        10µF             BottomLayer CAPC1608X06L                          46.868       15.948       0        Capacitor, X5R, ±20%                                                            
+C32        12pF             TopLayer    CAPC1005X04L                          37.440       10.185       180      Capacitor, NP0, ±2%                                                             
+C33        12pF             TopLayer    CAPC1005X04L                          37.440       9.220        180      Capacitor, NP0, ±2%                                                             
+C34        100nF            BottomLayer CAPC1005X04L                          45.725       8.125        180      Capacitor, X7R, ±10%                                                            
+LD3        LED RGB          BottomLayer MSL0104                               44.475       37.150       180      High brightness, side view RGB LED                                              
+R10        100R             BottomLayer RESC1005X04L                          34.620       28.445       360      Resistor, ±1%, 0.063W                                                           
+R11        39R              BottomLayer RESC1005X04L                          34.620       27.505       360      Resistor, ±1%, 0.063W                                                           
+R12        39R              BottomLayer RESC1005X04L                          34.620       26.565       360      Resistor, ±1%, 0.063W                                                           
+U6         LPS22HB          BottomLayer LGA50P200X200X80-10N                  25.984       7.696        360      MEMS nano pressure sensor: 260-1260 hPa absolute digital output barometer       
+U11        MP34DB02         TopLayer    RHLGA-4_(3x4x1mm)                     47.927       16.534       360      MEMS audio sensor omnidirectional digital microphone                            
+U12        NX3DV2567        BottomLayer XQFN40P180X260X50-16N                 44.963       10.360       360      Low-ohmic four-pole double-throw analog switch                                  
+C36        330pF            BottomLayer CAPC1005X04L                          30.810       30.175       90       Capacitor, NP0, ±5%                                                             
+R18        15k              BottomLayer RESC1005X04L                          12.802       38.938       360      Resistor, ±1%, 0.063W                                                           
+R16        18k              BottomLayer RESC1005X04L                          12.776       39.878       360      Resistor, ±1%, 0.063W                                                           
+R14        18k              BottomLayer RESC1005X04L                          10.414       35.027       90       Resistor, ±1%, 0.063W                                                           
+R13        10k              BottomLayer RESC1005X04L                          9.474        35.027       270      Resistor, ±1%, 0.063W                                                           
+C40        1.0µF            BottomLayer CAPC1608X06L                          10.490       41.631       180      Capacitor, X7R, ±10%                                                            
+U10        NX3DV2567        BottomLayer XQFN40P180X260X50-16N                 16.891       9.347        360      Low-ohmic four-pole double-throw analog switch                                  
+U9         CCS811           BottomLayer LGA60P270X400X110_HS-11N              21.508       9.404        180      Ultra-low power digital gas sensor for monitoring indoor air quality            
+U7         HTS221           BottomLayer HLGA100P200X200X100-6N                29.108       2.692        0        Capacitive digital sensor for relative humidity and temperature                 
+Q7         DMN3190LDW       BottomLayer SOT-363                               6.157        20.358       180      Dual N Ch MOFET, 1A, 190mOhm, 320mW                                             
+Q6         DMN3190LDW       BottomLayer SOT-363                               11.237       20.358       180      Dual N Ch MOFET, 1A, 190mOhm, 320mW                                             
+FB1        600R/0.5A        BottomLayer INDC1608X06L                          45.161       14.783       180      Ferrite Bead, 600 Ohm @ 100MHz, 500mA, 380 mOhm Max                             
+C14        100nF            BottomLayer CAPC1005X04L                          18.114       29.237       360      Capacitor, X7R, ±10%                                                            
+C29        100nF            BottomLayer CAPC1005X04L                          16.764       6.960        360      Capacitor, X7R, ±10%                                                            
+C28        1.0µF            BottomLayer CAPC1005X04L                          20.111       6.356        180      Capacitor, X5R, ±5%                                                             
+C26        100nF            BottomLayer CAPC1005X04L                          27.102       1.702        90       Capacitor, X7R, ±10%                                                            
+C38        10µF             BottomLayer CAPC1608X06L                          6.426        23.978       360      Capacitor, X5R, ±20%                                                            
+C39        100nF            BottomLayer CAPC1005X04L                          6.198        25.044       360      Capacitor, X7R, ±10%                                                            
+C15        100nF            BottomLayer CAPC1005X04L                          18.495       22.811       180      Capacitor, X7R, ±10%                                                            
+R1         10k              BottomLayer RESC1005X04L                          15.091       24.742       270      Resistor, ±1%, 0.063W                                                           
+U2         SX1509BIULTRT    BottomLayer QFN40P400X400X60_HS-29N               18.313       26.111       270      IC GPIO EXPANDER I2C 16CH 28QFN                                                 
+C16        100nF            BottomLayer CAPC1005X04L                          21.797       26.139       270      Capacitor, X7R, ±10%                                                            
+U16        XC6804A4E1       BottomLayer USP-6EL                               10.363       39.116       270      One Cell Li-ion/Li-polymer Linear Charger IC with Battery Temperature Detection 
+R20        1M5              BottomLayer RESC1005X04L                          30.201       41.986       270      Resistor, ±1%, 0.063W                                                           
+R21        180k             BottomLayer RESC1005X04L                          31.166       41.986       90       Resistor, ±1%, 0.063W                                                           
+R25        4k7              BottomLayer RESC1005X04L                          8.611        28.854       90       Resistor, ±1%, 0.063W                                                           
+R24        4k7              BottomLayer RESC1005X04L                          8.611        30.785       270      Resistor, ±1%, 0.063W                                                           
+C37        220nF            BottomLayer CAPC1005X04L                          44.729       34.290       360      Capacitor, X7R, ±10%                                                            
+L6         220µH            BottomLayer INDP4040X25N                          36.068       32.156       270      Inductor, ±20%, 200mA, 2.76 Ohm                                                 
+U13        TCK106AF         BottomLayer SOT95P280X140-5N                      26.264       47.066       90       1.0 A Load Switch IC with Slew Rate Control Driver in Small Package             
+Fid3       Fiducial mark    TopLayer    Fiducial_Round-Square                 6.100        49.000       90       Fiducial Mark                                                                   
+C35        150pF            BottomLayer CAPC1005X04L                          31.115       36.271       360      Capacitor, NP0, ±5%                                                             
+Q1         DMC2400UV        BottomLayer SOTFL50P162X60-6N                     30.378       48.844       180      Dual N & P Ch MOFET, 1.03A/0.7A, 480mOhm, 450mW                                 
+R3         1M0              BottomLayer RESC1005X04L                          28.626       48.971       90       Resistor, ±1%, 0.063W                                                           
+R29        100k             BottomLayer RESC1005X04L                          29.362       37.414       180      Resistor, ±1%, 0.063W                                                           
+R30        100k             BottomLayer RESC1005X04L                          37.516       49.200       270      Resistor, ±1%, 0.063W                                                           
+R31        100k             BottomLayer RESC1005X04L                          29.362       38.329       180      Resistor, ±1%, 0.063W                                                           
