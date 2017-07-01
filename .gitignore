@@ -1,0 +1,43 @@
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+bin/
+obj/
+
+#############
+## Keil
+#############
+*.dep
+*.bak
+*.lst
+*.d
+*.crf
+*.map
+*.plg
+*.idx
+*.uvopt
+*.uvgui.*
+*.uvoptx
+*.uvguix.*
+*.__i
+*._ia
+*.tra
+*.lnp
+*.axf
+*.tmp
+
+Jlink*.txt
+Jlink*.ini
+
+[Bb]uild/
+debug/
+release/
+_debug/
+_release/
