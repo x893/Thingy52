@@ -21,6 +21,14 @@
 #include "nrf_nvic.h"
 #include "nrf.h"
 #include "sdk_common.h"
+
+#ifdef SDH_DEBUG
+    #include "SEGGER_RTT.h"
+    #define DEBUG_PRINTF (void)SEGGER_RTT_printf
+#else
+    #define DEBUG_PRINTF(...)
+#endif
+
 #if CLOCK_ENABLED
 #include "nrf_drv_clock.h"
 #endif
@@ -456,7 +464,7 @@ uint32_t softdevice_enable_get_default_config(uint8_t central_links_count,
     return NRF_SUCCESS;
 }
 
-
+#ifdef SDH_DEBUG
 static inline uint32_t ram_total_size_get(void)
 {
 #ifdef NRF51
@@ -480,6 +488,7 @@ static inline uint32_t ram_end_address_get(void)
     ram_end_address+= ram_total_size_get();
     return ram_end_address;
 }
+#endif
 /*lint -restore*/
 
 /*lint --e{10} --e{19} --e{27} --e{40} --e{529} -save suppress Error 27: Illegal character */
@@ -498,10 +507,10 @@ uint32_t sd_check_ram_start(uint32_t sd_req_ram_start)
 #endif//__CC_ARM
     if (ram_start != sd_req_ram_start)
     {
-        NRF_LOG_WARNING("RAM START ADDR 0x%x should be adjusted to 0x%x\r\n",
+        DEBUG_PRINTF(0, "RAM START ADDR 0x%x should be adjusted to 0x%x\r\n",
                   ram_start,
                   sd_req_ram_start);
-        NRF_LOG_WARNING("RAM SIZE should be adjusted to 0x%x \r\n",
+        DEBUG_PRINTF(0, "RAM SIZE should be adjusted to 0x%x \r\n",
                 ram_end_address_get() - sd_req_ram_start);
         return NRF_SUCCESS;
     }
@@ -527,20 +536,20 @@ uint32_t softdevice_enable(ble_enable_params_t * p_ble_enable_params)
 #endif
 
     app_ram_base = ram_start;
-    NRF_LOG_INFO("sd_ble_enable: RAM START at 0x%x\r\n",
+    DEBUG_PRINTF(0, "sd_ble_enable: RAM START at 0x%x\r\n",
                     app_ram_base);
     err_code = sd_ble_enable(p_ble_enable_params, &app_ram_base);
 
     if (app_ram_base != ram_start)
     {
-        NRF_LOG_WARNING("sd_ble_enable: app_ram_base should be adjusted to 0x%x\r\n",
+        DEBUG_PRINTF(0, "sd_ble_enable: app_ram_base should be adjusted to 0x%x\r\n",
                 app_ram_base);
-        NRF_LOG_WARNING("ram size should be adjusted to 0x%x \r\n",
+        DEBUG_PRINTF(0, "ram size should be adjusted to 0x%x \r\n",
                 ram_end_address_get() - app_ram_base);
     }
     else if (err_code != NRF_SUCCESS)
     {
-        NRF_LOG_ERROR("sd_ble_enable: error 0x%x\r\n", err_code);
+        DEBUG_PRINTF(0, "sd_ble_enable: error 0x%x\r\n", err_code);
     }
     return err_code;
 #else

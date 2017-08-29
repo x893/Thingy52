@@ -88,6 +88,7 @@ static uint32_t rx_char_add(ble_dfu_t * p_dfu, const ble_dfu_init_t * p_dfu_init
     memset(&char_md, 0, sizeof(char_md));
 
     char_md.char_props.notify = 1;
+    char_md.char_props.write  = 1;    
     char_md.p_char_user_desc  = NULL;
     char_md.p_char_pf         = NULL;
     char_md.p_user_desc_md    = NULL;
@@ -99,7 +100,7 @@ static uint32_t rx_char_add(ble_dfu_t * p_dfu, const ble_dfu_init_t * p_dfu_init
 
     memset(&attr_md, 0, sizeof(attr_md));
 
-    BLE_GAP_CONN_SEC_MODE_SET_OPEN(&attr_md.read_perm);
+    //BLE_GAP_CONN_SEC_MODE_SET_OPEN(&attr_md.read_perm);
     BLE_GAP_CONN_SEC_MODE_SET_OPEN(&attr_md.write_perm);
 
     attr_md.vloc    = BLE_GATTS_VLOC_STACK;
@@ -128,7 +129,7 @@ uint32_t ble_dfu_init(ble_dfu_t * p_dfu, const ble_dfu_init_t * p_dfu_init)
 {
     uint32_t      err_code;
     ble_uuid_t    ble_uuid;
-    ble_uuid128_t nus_base_uuid = BLE_DFU_BASE_UUID;
+    ble_uuid128_t dfu_base_uuid = BLE_DFU_BASE_UUID;
 
     VERIFY_PARAM_NOT_NULL(p_dfu);
     VERIFY_PARAM_NOT_NULL(p_dfu_init);
@@ -141,19 +142,18 @@ uint32_t ble_dfu_init(ble_dfu_t * p_dfu, const ble_dfu_init_t * p_dfu_init)
     p_dfu->is_waiting_for_disconnection = false;
     p_dfu->is_ctrlpt_notification_enabled = false;
 
-    /**@snippet [Adding proprietary Service to S110 SoftDevice] */
-    // Add a custom base UUID.
-    err_code = sd_ble_uuid_vs_add(&nus_base_uuid, &p_dfu->uuid_type);
-    VERIFY_SUCCESS(err_code);
-
-    ble_uuid.type = p_dfu->uuid_type;
-    ble_uuid.uuid = BLE_UUID_DFU_SERVICE;
+    BLE_UUID_BLE_ASSIGN(ble_uuid, BLE_UUID_DFU_SERVICE);
 
     // Add the service.
     err_code = sd_ble_gatts_service_add(BLE_GATTS_SRVC_TYPE_PRIMARY,
                                         &ble_uuid,
                                         &p_dfu->service_handle);
     /**@snippet [Adding proprietary Service to S110 SoftDevice] */
+    VERIFY_SUCCESS(err_code);
+
+    /**@snippet [Adding proprietary Service to S110 SoftDevice] */
+    // Add a custom base UUID.
+    err_code = sd_ble_uuid_vs_add(&dfu_base_uuid, &p_dfu->uuid_type);
     VERIFY_SUCCESS(err_code);
 
     // Add the RX Characteristic.
