@@ -48,6 +48,8 @@
 #endif
 #include "macros_common.h"
 
+#if CONFIG_AUDIO_ENABLED
+
 static ble_tss_t              m_tss;  /**< Structure to identify the Thingy Sound Service. */
 
 static void drv_speaker_evt_handler(drv_speaker_evt_t evt)
@@ -272,3 +274,5 @@ uint32_t m_sound_init(m_ble_service_handle_t * p_handle)
 
     return drv_mic_init(drv_mic_data_handler);
 }
+
+#endif	/* CONFIG_AUDIO_ENABLED */

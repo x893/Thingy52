@@ -53,6 +53,8 @@ STATIC_ASSERT(CONFIG_PDM_BUFFER_SIZE_SAMPLES == (1 * CONFIG_AUDIO_FRAME_SIZE_SAM
 #endif
 #include "macros_common.h"
 
+#if CONFIG_AUDIO_ENABLED
+
 typedef struct
 {
     int16_t  buf[CONFIG_PDM_BUFFER_SIZE_SAMPLES];
@@ -240,3 +242,4 @@ uint32_t drv_mic_init(drv_mic_data_handler_t data_handler)
 
     return drv_audio_init(m_audio_buffer_handler);
 }
+#endif	/* CONFIG_AUDIO_ENABLED */

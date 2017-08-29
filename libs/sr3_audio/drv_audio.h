@@ -51,6 +51,8 @@
 #include "sdk_errors.h"
 #include "drv_audio_config.h"
 
+#if CONFIG_AUDIO_ENABLED
+
 /**@brief Audio buffer handler. */
 typedef void (*drv_audio_buffer_handler_t)(int16_t *p_buffer, uint16_t samples);
 
@@ -76,6 +78,8 @@ ret_code_t drv_audio_disable(void);
  * @retval NRF_ERROR_INTERNAL
  */
 ret_code_t drv_audio_init(drv_audio_buffer_handler_t buffer_handler);
+
+#endif	/* CONFIG_AUDIO_ENABLED */
 
 #endif /* __DRV_AUDIO_H__ */
 /** @} */

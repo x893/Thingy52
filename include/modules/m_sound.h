@@ -51,6 +51,9 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "m_ble.h"
+#include "drv_audio_config.h"
+
+#if CONFIG_AUDIO_ENABLED
 
 /**@brief Function to initialize sound module.
  *
@@ -60,6 +63,8 @@
  * @retval Other codes from the underlying drivers.
  */
 uint32_t m_sound_init(m_ble_service_handle_t * p_handle);
+
+#endif
 
 #endif
 

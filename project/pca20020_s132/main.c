@@ -365,8 +365,10 @@ static void thingy_init(void)
                              &motion_params);
     APP_ERROR_CHECK(err_code);
 
+#if CONFIG_AUDIO_ENABLED
     err_code = m_sound_init(&m_ble_service_handles[THINGY_SERVICE_SOUND]);
     APP_ERROR_CHECK(err_code);
+#endif
 
     /**@brief Initialize the battery measurement. */
     batt_meas_init.evt_handler = m_batt_meas_handler;
